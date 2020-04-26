@@ -1,0 +1,124 @@
+<!-- 
+    Układ 16:9
+    Ma być podobny (nie pixel w pixel)
+    Ma być responsywny (dostosowoywać się do wysokości przeglądarki)
+
+    ZŁOTE ZASADY
+    - Zrób tak jak potrafisz i tyle ile potrafisz
+    - Próbuj/testuj/sprawdzaj co by było. Takie próbowanie to najważniejsze cechy programisty
+    - Nie przeskakuj ćwiczenia. 
+ -->
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>A dream about old Japan</title>
+    <style>
+        .picture {
+            position: absolute;
+            height: 45vh;
+            width: 80vh;
+            overflow: hidden;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            background-color: #00b7ff;
+            /*
+            centrowanie z użyciem transform 
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            ----------------
+            centrowanie z użyciem calc
+            top: calc(50%-połowa wysokości obrazka)
+            left: calc(50%-połowa szerokości obrazka)
+            */
+        }
+
+        img {
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 0;
+            border: 0;
+        }
+
+        .img1 {
+            margin-top: 5%;
+        }
+
+        .img2 {
+            margin-top: 18%;
+        }
+
+        .img3 {
+            margin-top: 25%;
+        }
+
+        .img4 {
+            margin-top: 23%;
+        }
+
+        .img5 {
+            margin-top: 30%;
+        }
+
+        .img6 {
+            margin-top: 45%;
+        }
+
+        .img7 {
+            margin-top: 4%;
+            margin-left: 5%;
+            width: 8%;
+        }
+
+        .img8 {
+            margin-top: 7%;
+            margin-left: -15%;
+            width: 40%;
+        }
+
+        .img9 {
+            margin-top: 7%;
+            margin-left: 55%;
+            width: 45%;
+        }
+
+        .img10 {
+            margin-top: 7%;
+            margin-left: 60%;
+            width: 40%;
+        }
+
+        .img11 {
+            margin-top: 35%;
+            margin-left: 5%;
+            width: 8%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="picture">
+        <!-- img[src=img/japan$.png]*11 -->
+        <img class="img1" src="img/japan1.png" alt="">
+        <img class="img2" src="img/japan2.png" alt="">
+        <img class="img3" src="img/japan3.png" alt="">
+        <img class="img4" src="img/japan4.png" alt="">
+        <img class="img5" src="img/japan5.png" alt="">
+        <img class="img6" src="img/japan6.png" alt="">
+        <img class="img7" src="img/japan7.png" alt="">
+        <img class="img8" src="img/japan8.png" alt="">
+        <img class="img9" src="img/japan9.png" alt="">
+        <img class="img10" src="img/japan10.png" alt="">
+        <img class="img11" src="img/japan11.png" alt="">
+    </div>
+</body>
+
+</html>
